@@ -13,7 +13,7 @@ import java.util.Map;
 
 //The Dao is the data layer
 @Repository //tells the SpringBoot bean that this is a repository
-public class StudentDao {
+public class FakeStudentDaoImplementation {
 
 //From https://www.youtube.com/watch?v=Ke7Tr4RgRTs
 

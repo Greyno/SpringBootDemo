@@ -51,7 +51,7 @@ public class StudentController {
 
     //To DELETE in Postman, select Delete and select the student by using localhost:8080/students/id# and
     //then SEND. YOu can use a GET to see the new list of students, less the deleted item (use localhost:8080/students)
-    
+
     //To remove (DELETE) an item from the database using DELETE
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteStudentById(@PathVariable("id") int id){
