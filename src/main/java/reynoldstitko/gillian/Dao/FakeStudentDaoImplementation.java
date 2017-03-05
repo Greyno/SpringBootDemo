@@ -1,5 +1,6 @@
 package reynoldstitko.gillian.Dao;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import reynoldstitko.gillian.Entity.Student;
 
@@ -13,6 +14,7 @@ import java.util.Map;
 
 //The Dao is the data layer
 @Repository //tells the SpringBoot bean that this is a repository
+@Qualifier("fakeData")
 public class FakeStudentDaoImplementation implements StudentDao {
 
 //From https://www.youtube.com/watch?v=Ke7Tr4RgRTs
