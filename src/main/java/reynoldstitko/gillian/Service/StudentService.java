@@ -1,6 +1,7 @@
 package reynoldstitko.gillian.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import reynoldstitko.gillian.Dao.StudentDao;
 import reynoldstitko.gillian.Entity.Student;
@@ -16,7 +17,12 @@ import java.util.Collection;
 public class StudentService {
 
     //Create an instance of the DAO. This is the service that uses the database
+    //Since we now have two versions of the StudentDao (one for fake dat and one for
+    //NySQL data, we need to use a qualifier to help Spring determine which to use
+
     @Autowired
+    @Qualifier("mysqlData") //can now switch between fakeData and mySQl data using the qualifier
+    //If we run Postman or the localhost, we will get the data associated with this database
     private StudentDao studentDao;
 
     public Collection<Student> getAllStudents(){

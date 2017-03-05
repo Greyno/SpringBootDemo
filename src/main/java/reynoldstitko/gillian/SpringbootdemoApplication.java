@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication //SpringBootApplication inits the beans, recognizes annotations, etc.
 public class SpringbootdemoApplication {
 
+	//See: //From https://www.youtube.com/watch?v=Ke7Tr4RgRTs
 	//Run the application open a browser to http://localhost:8080/students and the student info from the
 	// GET call will be visible. The result is JSON - the conversion is done automatically using Jackson
 
