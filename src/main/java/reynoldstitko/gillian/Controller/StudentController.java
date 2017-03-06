@@ -74,7 +74,7 @@ public class StudentController {
     //student information in as JSON format and Send. Will be able to see changes on localhost:808. Also,
     //in Postman, can GET to see a list of all the students now in the database
 
-    //Insert (CREATE) a new student into the database using POST
+    //Insert (CREATE/ADD) a new student into the database using POST
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void insertStudent(@RequestBody Student student){
         studentService.insertStudent(student);
