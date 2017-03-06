@@ -16,7 +16,7 @@ import java.util.Collection;
 @Service
 public class StudentService {
 
-    //Create an instance of the DAO. This is the service that uses the database
+    //Create an instance of the DAO (Data access). This is the service that uses the database
     //Since we now have two versions of the StudentDao (one for fake dat and one for
     //NySQL data, we need to use a qualifier to help Spring determine which to use
 

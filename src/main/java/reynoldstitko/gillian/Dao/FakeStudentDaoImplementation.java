@@ -19,7 +19,7 @@ public class FakeStudentDaoImplementation implements StudentDao {
 
 //From https://www.youtube.com/watch?v=Ke7Tr4RgRTs
 
-    //The DAO is a class that will give us data from any database we want
+    //The DAO (DB Access Objects) is a class that will give us data from any database we want
     //Implement CRUD (create, read, update, delete)
 
     //Work with some fake data initially - this is our database
