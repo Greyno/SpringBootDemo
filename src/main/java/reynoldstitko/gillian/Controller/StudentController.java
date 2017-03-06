@@ -32,7 +32,7 @@ public class StudentController {
     //the item below is a Get request. We could also have said @RequestMapping(value = "/", method = RequestMethod.GET)
     //where "/" defines the endpoint, but once we get to "students" this will be the method that will be triggered
 
-    //READ items in the database using GET
+    //READ items in the database using GET. The endpoint here is the base URL "/students"
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Student> getAllStudents(){
         return studentService.getAllStudents();
@@ -42,7 +42,7 @@ public class StudentController {
     //We have created another endpoint
     //In the browser, use http://localhost:8080/students/3 to get the student with the id value of 3
 
-    //READ items in the database using GET
+    //READ items in the database using GET. The endpoint URI here is an id "students/id#"
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Student getStudentById(@PathVariable("id") int id){
         return studentService.getStudentById(id);
