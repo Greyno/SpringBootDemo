@@ -15,7 +15,7 @@ import java.util.Collection;
 
 //The Controller layer talks to the Service Layer
 @RestController
-@RequestMapping("/students") //Need a URL or endpoint; we'll define the pattern for the endpoint
+@RequestMapping("/students") //Need a URL for endpoint; we'll define the pattern for the endpoint
 public class StudentController {
 
     //The controller offloads the request to Student Service
