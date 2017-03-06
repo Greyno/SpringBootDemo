@@ -7,4 +7,4 @@ The project uses IntelliJ (with Maven and SpringBoot). Postman is also used to s
 In order to create an interface that would be able to read MySQL data, in IntelliJ, we can go from the FakeStudentDaoImplementation by doing Refactor>Extract>Interface...
 Select all of the methods in the fake data and rename the class to StudentDao. This will create an interface named StudentDao.
 
-You can switch between the data that various dbases use by using the @Qualifier annotation.
+You can switch between the data that various dbases use by using the @Qualifier annotation and the name of the data source (e.g. @Qualifier("fakedata") or @Qualifier("mysqldata").
